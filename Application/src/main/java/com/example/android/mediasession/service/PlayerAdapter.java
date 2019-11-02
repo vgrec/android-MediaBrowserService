@@ -21,10 +21,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.media.AudioManager;
-import android.net.wifi.WifiManager;
-import android.support.annotation.NonNull;
 import android.support.v4.media.MediaMetadataCompat;
-import android.support.v4.media.session.PlaybackStateCompat;
+
+import androidx.annotation.NonNull;
 
 /**
  * Abstract player implementation that handles playing music with proper handling of headphones

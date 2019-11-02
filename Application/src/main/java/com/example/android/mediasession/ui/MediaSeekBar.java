@@ -22,10 +22,11 @@ import android.support.v4.media.MediaMetadataCompat;
 import android.support.v4.media.session.MediaControllerCompat;
 import android.support.v4.media.session.MediaSessionCompat;
 import android.support.v4.media.session.PlaybackStateCompat;
-import android.support.v7.widget.AppCompatSeekBar;
 import android.util.AttributeSet;
 import android.view.animation.LinearInterpolator;
 import android.widget.SeekBar;
+
+import androidx.appcompat.widget.AppCompatSeekBar;
 
 /**
  * SeekBar that can be used with a {@link MediaSessionCompat} to track and seek in playing

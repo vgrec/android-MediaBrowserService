@@ -19,10 +19,7 @@ package com.example.android.mediasession.service;
 import android.app.Notification;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.media.MediaBrowserCompat;
-import android.support.v4.media.MediaBrowserServiceCompat;
 import android.support.v4.media.MediaDescriptionCompat;
 import android.support.v4.media.MediaMetadataCompat;
 import android.support.v4.media.session.MediaSessionCompat;
@@ -35,6 +32,10 @@ import com.example.android.mediasession.service.players.MediaPlayerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
+import androidx.media.MediaBrowserServiceCompat;
 
 public class MusicService extends MediaBrowserServiceCompat {
 

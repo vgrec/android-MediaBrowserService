@@ -24,24 +24,22 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.annotation.RequiresApi;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.media.MediaDescriptionCompat;
 import android.support.v4.media.MediaMetadataCompat;
-import android.support.v4.media.app.NotificationCompat.MediaStyle;
-import android.support.v4.media.session.MediaButtonReceiver;
 import android.support.v4.media.session.MediaSessionCompat;
 import android.support.v4.media.session.PlaybackStateCompat;
-import android.support.v4.os.BuildCompat;
 import android.util.Log;
 
 import com.example.android.mediasession.R;
 import com.example.android.mediasession.service.MusicService;
-import com.example.android.mediasession.service.PlaybackInfoListener;
 import com.example.android.mediasession.service.contentcatalogs.MusicLibrary;
 import com.example.android.mediasession.ui.MainActivity;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.core.app.NotificationCompat;
+import androidx.core.content.ContextCompat;
+import androidx.media.session.MediaButtonReceiver;
 
 
 /**
@@ -134,7 +132,7 @@ public class MediaNotificationManager {
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(mService, CHANNEL_ID);
         builder.setStyle(
-                new MediaStyle()
+                new androidx.media.app.NotificationCompat.MediaStyle()
                         .setMediaSession(token)
                         .setShowActionsInCompactView(0, 1, 2)
                         // For backwards compatibility with Android L and earlier.
